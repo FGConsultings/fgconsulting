@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&A Consultoría Contable| Consultoría Integral Contable, Financiera, Fiscal y Auditoría</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/521234567891?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20sus%20servicios." target="_blank" class="whatsapp-float" aria-label="Contacto por WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+    </a>
+
+    <!-- Inputs de Radio para manejar idioma, menú y temporizador de envío con CSS puro -->
+    <input type="radio" name="language" id="lang-es" checked class="lang-radio">
+    <input type="radio" name="language" id="lang-en" class="lang-radio">
+    <input type="checkbox" id="lang-toggle-click" class="lang-radio">
+    <input type="checkbox" id="form-sent-trigger" class="lang-radio">
+
+    <!-- Header / Barra de Navegación -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#" class="logo-text-link">G&A Consultoría Contable</a>
+            </div>
+            <nav class="nav-links">
+                <a href="#nosotros">
+                    <span class="nav-es">Nosotros</span>
+                    <span class="nav-en">About Us</span>
+                </a>
+                <a href="#servicios">
+                    <span class="nav-es">Servicios</span>
+                    <span class="nav-en">Services</span>
+                </a>
+                <a href="#cotizador">
+                    <span class="nav-es">Cotizar</span>
+                    <span class="nav-en">Quote</span>
+                </a>
+                <a href="#contacto" class="btn-nav">
+                    <span class="nav-es">Contacto</span>
+                    <span class="nav-en">Contact</span>
+                </a>
+                
+                <!-- Selector de Idioma Puro CSS -->
+                <div class="lang-dropdown">
+                    <label for="lang-toggle-click" class="lang-btn">
+                        <span class="nav-es">Español ▾</span>
+                        <span class="nav-en">English ▾</span>
+                    </label>
+                    <div class="lang-menu">
+                        <label for="lang-es" class="lang-option" onclick="document.getElementById('lang-toggle-click').checked = false;">Español</label>
+                        <label for="lang-en" class="lang-option" onclick="document.getElementById('lang-toggle-click').checked = false;">English</label>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">
+                <span class="nav-es">Excelencia y Rigor Corporativo</span>
+                <span class="nav-en">Corporate Excellence and Rigor</span>
+            </span>
+            
+            <h1>
+                <span class="nav-es">Estrategia Contable, Fiscal y Financiera de Alto Nivel</span>
+                <span class="nav-en">High-Level Accounting, Fiscal and Financial Strategy</span>
+            </h1>
+            
+            <p>
+                <span class="nav-es">Servicios especializados para personas físicas y morales que buscan blindaje patrimonial, cumplimiento fiscal y liderazgo empresarial absoluto.</span>
+                <span class="nav-en">Specialized services for individuals and corporations seeking asset protection, tax compliance, and absolute business leadership.</span>
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="#cotizador" class="btn btn-primary">
+                    <span class="nav-es">Solicitar Cotización</span>
+                    <span class="nav-en">Request a Quote</span>
+                </a>
+                <a href="#servicios" class="btn btn-secondary">
+                    <span class="nav-es">Explorar Servicios</span>
+                    <span class="nav-en">Explore Services</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span class="nav-es">Firma de Consultoría Ejecutiva</span>
+                    <span class="nav-en">Executive Consulting Firm</span>
+                </h2>
+                <p>
+                    <span class="nav-es">Nuestra esencia corporativa se fundamenta en la precisión, la ética y la visión de crecimiento sostenible.</span>
+                    <span class="nav-en">Our corporate essence is grounded in precision, ethics, and a vision of sustainable growth.</span>
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                
+                <!-- Tarjeta 1: Misión -->
+                <div class="service-card-container">
+                    <div class="service-card">
+                        <div class="card-face card-front">
+                            <div class="service-image-container">
+                                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80" alt="Misión" class="service-bg-img">
+                                <div class="service-img-overlay"></div>
+                                <div class="card-title-badge">
+                                    <span class="nav-es">Misión</span>
+                                    <span class="nav-en">Mission</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>
+                                    <span class="nav-es">Nuestra Misión</span>
+                                    <span class="nav-en">Our Mission</span>
+                                </h3>
+                                <p>
+                                    <span class="nav-es">Brindar soluciones integrales con el más alto rigor técnico, garantizando tranquilidad operativa.</span>
+                                    <span class="nav-en">Provide comprehensive solutions with the highest technical rigor, ensuring operational peace of mind.</span>
+                                </p>
+                                <span class="btn-detail">
+                                    <span class="nav-es">Ver detalle</span>
+                                    <span class="nav-en">View details</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="service-image-container back-bg">
+                                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80" alt="Detalle Misión" class="service-bg-img">
+                                <div class="service-img-overlay-dark"></div>
+                            </div>
+                            <div class="card-content-back">
+                                <h3>
+                                    <span class="nav-es">Detalle de Misión</span>
+                                    <span class="nav-en">Mission Details</span>
+                                </h3>
+                                <p class="back-text-desc">
+                                    <span class="nav-es">Brindar soluciones integrales en materia contable, fiscal, financiera y de auditoría con el más alto rigor técnico, garantizando tranquilidad operativa y maximización de recursos para nuestros clientes.</span>
+                                    <span class="nav-en">Provide comprehensive solutions in accounting, tax, financial, and auditing matters with the highest technical rigor, ensuring operational peace of mind and resource maximization for our clients.</span>
+                                </p>
+                                <span class="back-hint">
+                                    <span class="nav-es">Aleja el cursor para volver</span>
+                                    <span class="nav-en">Move cursor away to return</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Visión -->
+                <div class="service-card-container">
+                    <div class="service-card">
+                        <div class="card-face card-front">
+                            <div class="service-image-container">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Visión" class="service-bg-img">
+                                <div class="service-img-overlay"></div>
+                                <div class="card-title-badge">
+                                    <span class="nav-es">Visión</span>
+                                    <span class="nav-en">Vision</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>
+                                    <span class="nav-es">Nuestra Visión</span>
+                                    <span class="nav-en">Our Vision</span>
+                                </h3>
+                                <p>
+                                    <span class="nav-es">Consolidarnos como la firma líder y referente indiscutible en asesoría corporativa a nivel nacional.</span>
+                                    <span class="nav-en">Consolidate ourselves as the leading firm and undisputed benchmark in corporate advisory nationwide.</span>
+                                </p>
+                                <span class="btn-detail">
+                                    <span class="nav-es">Ver detalle</span>
+                                    <span class="nav-en">View details</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="service-image-container back-bg">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Detalle Visión" class="service-bg-img">
+                                <div class="service-img-overlay-dark"></div>
+                            </div>
+                            <div class="card-content-back">
+                                <h3>
+                                    <span class="nav-es">Detalle de Visión</span>
+                                    <span class="nav-en">Vision Details</span>
+                                </h3>
+                                <p class="back-text-desc">
+                                    <span class="nav-es">Consolidarnos como la firma líder y referente indiscutible en asesoría corporativa a nivel nacional, reconocidos por nuestra innovación, confiabilidad y compromiso absoluto con el éxito empresarial.</span>
+                                    <span class="nav-en">Consolidate ourselves as the leading firm and undisputed benchmark in corporate advisory nationwide, recognized for our innovation, reliability, and absolute commitment to business success.</span>
+                                </p>
+                                <span class="back-hint">
+                                    <span class="nav-es">Aleja el cursor para volver</span>
+                                    <span class="nav-en">Move cursor away to return</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Objetivo -->
+                <div class="service-card-container">
+                    <div class="service-card">
+                        <div class="card-face card-front">
+                            <div class="service-image-container">
+                                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80" alt="Objetivo" class="service-bg-img">
+                                <div class="service-img-overlay"></div>
+                                <div class="card-title-badge">
+                                    <span class="nav-es">Objetivo</span>
+                                    <span class="nav-en">Objective</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>
+                                    <span class="nav-es">Nuestro Objetivo</span>
+                                    <span class="nav-en">Our Objective</span>
+                                </h3>
+                                <p>
+                                    <span class="nav-es">Optimizar la estructura fiscal y financiera mitigando riesgos y asegurando cumplimiento.</span>
+                                    <span class="nav-en">Optimize the tax and financial structure by mitigating risks and ensuring compliance.</span>
+                                </p>
+                                <span class="btn-detail">
+                                    <span class="nav-es">Ver detalle</span>
+                                    <span class="nav-en">View details</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="service-image-container back-bg">
+                                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80" alt="Detalle Objetivo" class="service-bg-img">
+                                <div class="service-img-overlay-dark"></div>
+                            </div>
+                            <div class="card-content-back">
+                                <h3>
+                                    <span class="nav-es">Detalle de Objetivo</span>
+                                    <span class="nav-en">Objective Details</span>
+                                </h3>
+                                <p class="back-text-desc">
+                                    <span class="nav-es">Optimizar la estructura fiscal y financiera de personas físicas y morales, mitigando riesgos operativos y asegurando el estricto cumplimiento normativo ante las autoridades competentes.</span>
+                                    <span class="nav-en">Optimize the tax and financial structure of individuals and corporations, mitigating operational risks and ensuring strict regulatory compliance before competent authorities.</span>
+                                </p>
+                                <span class="back-hint">
+                                    <span class="nav-es">Aleja el cursor para volver</span>
+                                    <span class="nav-en">Move cursor away to return</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="why-us-box">
+                <h3>
+                    <span class="nav-es">¿Por qué elegirnos?</span>
+                    <span class="nav-en">Why Choose Us?</span>
+                </h3>
+                <p>
+                    <span class="nav-es">En <strong>G&A Consultoría Contable</strong> no solo registramos operaciones; transformamos datos financieros en ventajas competitivas. Nuestro equipo multidisciplinario combina experiencia jurídica y contable para ofrecer estrategias a la medida, blindando cada decisión de su empresa con absoluta confidencialidad y profesionalismo.</span>
+                    <span class="nav-en">At <strong>G&A Consultoría Contable</strong> we do not just record operations; we transform financial data into competitive advantages. Our multidisciplinary team combines legal and accounting expertise to offer tailored strategies, protecting every decision of your company with absolute confidentiality and professionalism.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span class="nav-es">Áreas de Práctica Especializada</span>
+                    <span class="nav-en">Specialized Practice Areas</span>
+                </h2>
+                <p>
+                    <span class="nav-es">Coloca el cursor sobre cada tarjeta o presiona "Ver detalle" para conocer el enfoque técnico</span>
+                    <span class="nav-en">Hover over each card or click "View details" to learn about the technical approach</span>
+                </p>
+            </div>
+            <div class="services-grid">
+                
+                <!-- Tarjeta 1: Contabilidad General -->
+                <div class="service-card-container">
+                    <div class="service-card">
+                        <div class="card-face card-front">
+                            <div class="service-image-container">
+                                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Contabilidad General" class="service-bg-img">
+                                <div class="service-img-overlay"></div>
+                                <svg class="service-transparent-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 16H7V5h10v14zm-2-10H9V7h6v2zm0 4H9v-2h6v2zm-6 4H9v-2h2v2zm4 0h-2v-2h2v2zm0-4h-2v-2h2v2z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>
+                                    <span class="nav-es">Contabilidad General</span>
+                                    <span class="nav-en">General Accounting</span>
+                                </h3>
+                                <p>
+                                    <span class="nav-es">Registro y procesamiento financiero riguroso para la toma de decisiones asertivas.</span>
+                                    <span class="nav-en">Rigorous financial recording and processing for assertive decision making.</span>
+                                </p>
+                                <span class="btn-detail">
+                                    <span class="nav-es">Ver detalle</span>
+                                    <span class="nav-en">View details</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="service-image-container back-bg">
+                                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Detalle Contabilidad" class="service-bg-img">
+                                <div class="service-img-overlay-dark"></div>
+                            </div>
+                            <div class="card-content-back">
+                                <h3>
+                                    <span class="nav-es">Detalle Técnico</span>
+                                    <span class="nav-en">Technical Details</span>
+                                </h3>
+                                <ul class="nav-es">
+                                    <li>Conciliaciones bancarias automatizadas.</li>
+                                    <li>Control estricto de activos y pasivos.</li>
+                                    <li>Estados financieros mensuales bajo NIF.</li>
+                                    <li>Depuración continua de cuentas.</li>
+                                </ul>
+                                <ul class="nav-en">
+                                    <li>Automated bank reconciliations.</li>
+                                    <li>Strict control of assets and liabilities.</li>
+                                    <li>Monthly financial statements under NIF.</li>
+                                    <li>Continuous account cleansing.</li>
+                                </ul>
+                                <span class="back-hint">
+                                    <span class="nav-es">Aleja el cursor para volver</span>
+                                    <span class="nav-en">Move cursor away to return</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Estrategia Fiscal -->
+                <div class="service-card-container">
+                    <div class="service-card">
+                        <div class="card-face card-front">
+                            <div class="service-image-container">
+                                <img src=" https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Estrategia Fiscal" class="service-bg-img">
+                                <div class="service-img-overlay"></div>
+                                <svg class="service-transparent-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>
+                                    <span class="nav-es">Estrategia Fiscal</span>
+                                    <span class="nav-en">Tax Strategy</span>
+                                </h3>
+                                <p>
+                                    <span class="nav-es">Optimización y planeación legal de obligaciones tributarias para personas físicas y morales.</span>
+                                    <span class="nav-en">Optimization and legal planning of tax obligations for individuals and corporations.</span>
+                                </p>
+                                <span class="btn-detail">
+                                    <span class="nav-es">Ver detalle</span>
+                                    <span class="nav-en">View details</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="service-image-container back-bg">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Detalle Fiscal" class="service-bg-img">
+                                <div class="service-img-overlay-dark"></div>
+                            </div>
+                            <div class="card-content-back">
+                                <h3>
+                                    <span class="nav-es">Detalle Técnico</span>
+                                    <span class="nav-en">Technical Details</span>
+                                </h3>
+                                <ul class="nav-es">
+                                    <li>Planeación fiscal preventiva y defensiva.</li>
+                                    <li>Cumplimiento estricto ante el SAT.</li>
+                                    <li>Estudios de precios de transferencia.</li>
+                                    <li>Análisis de estímulos fiscales.</li>
+                                </ul>
+                                <ul class="nav-en">
+                                    <li>Preventive and defensive tax planning.</li>
+                                    <li>Strict compliance before the SAT.</li>
+                                    <li>Transfer pricing studies.</li>
+                                    <li>Analysis of tax incentives.</li>
+                                </ul>
+                                <span class="back-hint">
+                                    <span class="nav-es">Aleja el cursor para volver</span>
+                                    <span class="nav-en">Move cursor away to return</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Consultoría Financiera -->
+                <div class="service-card-container">
+                    <div class="service-card">
+                        <div class="card-face card-front">
+                            <div class="service-image-container">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Consultoría Financiera" class="service-bg-img">
+                                <div class="service-img-overlay"></div>
+                                <svg class="service-transparent-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 15h4v2H5v-2zm6-4h4v6h-4v-6zm6-4h4v10h-4V7z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>
+                                    <span class="nav-es">Consultoría Financiera</span>
+                                    <span class="nav-en">Financial Consulting</span>
+                                </h3>
+                                <p>
+                                    <span class="nav-es">Evaluación de proyectos, rentabilidad de capital y optimización de flujos de efectivo.</span>
+                                    <span class="nav-en">Project evaluation, capital profitability, and cash flow optimization.</span>
+                                </p>
+                                <span class="btn-detail">
+                                    <span class="nav-es">Ver detalle</span>
+                                    <span class="nav-en">View details</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="service-image-container back-bg">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Detalle Financiero" class="service-bg-img">
+                                <div class="service-img-overlay-dark"></div>
+                            </div>
+                            <div class="card-content-back">
+                                <h3>
+                                    <span class="nav-es">Detalle Técnico</span>
+                                    <span class="nav-en">Technical Details</span>
+                                </h3>
+                                <ul class="nav-es">
+                                    <li>Modelado financiero y presupuestal.</li>
+                                    <li>Análisis de capital de trabajo y liquidez.</li>
+                                    <li>Evaluación de viabilidad de inversiones.</li>
+                                    <li>Reestructuración de pasivos.</li>
+                                </ul>
+                                <ul class="nav-en">
+                                    <li>Financial and budgetary modeling.</li>
+                                    <li>Working capital and liquidity analysis.</li>
+                                    <li>Investment viability evaluation.</li>
+                                    <li>Liability restructuring.</li>
+                                </ul>
+                                <span class="back-hint">
+                                    <span class="nav-es">Aleja el cursor para volver</span>
+                                    <span class="nav-en">Move cursor away to return</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Auditoría y Control -->
+                <div class="service-card-container">
+                    <div class="service-card">
+                        <div class="card-face card-front">
+                            <div class="service-image-container">
+                                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Auditoría y Control" class="service-bg-img">
+                                <div class="service-img-overlay"></div>
+                                <svg class="service-transparent-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 6h-4V4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM10 4h4v2h-4V4zm10 15H4V8h16v11z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>
+                                    <span class="nav-es">Auditoría y Control</span>
+                                    <span class="nav-en">Auditing and Control</span>
+                                </h3>
+                                <p>
+                                    <span class="nav-es">Revisión exhaustiva e implementación de controles internos para mitigar riesgos.</span>
+                                    <span class="nav-en">Comprehensive review and implementation of internal controls to mitigate risks.</span>
+                                </p>
+                                <span class="btn-detail">
+                                    <span class="nav-es">Ver detalle</span>
+                                    <span class="nav-en">View details</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="service-image-container back-bg">
+                                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Detalle Auditoría" class="service-bg-img">
+                                <div class="service-img-overlay-dark"></div>
+                            </div>
+                            <div class="card-content-back">
+                                <h3>
+                                    <span class="nav-es">Detalle Técnico</span>
+                                    <span class="nav-en">Technical Details</span>
+                                </h3>
+                                <ul class="nav-es">
+                                    <li>Auditoría de estados financieros externos.</li>
+                                    <li>Diseño de control interno corporativo.</li>
+                                    <li>Detección y prevención de riesgos.</li>
+                                    <li>Dictaminación fiscal y financiera.</li>
+                                </ul>
+                                <ul class="nav-en">
+                                    <li>External financial statement audit.</li>
+                                    <li>Corporate internal control design.</li>
+                                    <li>Risk detection and prevention.</li>
+                                    <li>Tax and financial certification.</li>
+                                </ul>
+                                <span class="back-hint">
+                                    <span class="nav-es">Aleja el cursor para volver</span>
+                                    <span class="nav-en">Move cursor away to return</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5: Gestión de Nóminas -->
+                <div class="service-card-container">
+                    <div class="service-card">
+                        <div class="card-face card-front">
+                            <div class="service-image-container">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Gestión de Nóminas" class="service-bg-img">
+                                <div class="service-img-overlay"></div>
+                                <svg class="service-transparent-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>
+                                    <span class="nav-es">Gestión de Nóminas</span>
+                                    <span class="nav-en">Payroll Management</span>
+                                </h3>
+                                <p>
+                                    <span class="nav-es">Cálculo, timbrado y administración integral de capital humano bajo normativa laboral.</span>
+                                    <span class="nav-en">Calculation, stamping, and comprehensive human capital administration under labor regulations.</span>
+                                </p>
+                                <span class="btn-detail">
+                                    <span class="nav-es">Ver detalle</span>
+                                    <span class="nav-en">View details</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="service-image-container back-bg">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Detalle Nóminas" class="service-bg-img">
+                                <div class="service-img-overlay-dark"></div>
+                            </div>
+                            <div class="card-content-back">
+                                <h3>
+                                    <span class="nav-es">Detalle Técnico</span>
+                                    <span class="nav-en">Technical Details</span>
+                                </h3>
+                                <ul class="nav-es">
+                                    <li>Cálculo de nómina ordinaria y extraordinaria.</li>
+                                    <li>Timbrado fiscal CFDI de nómina vigente.</li>
+                                    <li>Determinación de cuotas IMSS, INFONAVIT e ISN.</li>
+                                    <li>Gestión de altas, bajas y modificaciones en IDSE.</li>
+                                </ul>
+                                <ul class="nav-en">
+                                    <li>Regular and extraordinary payroll calculation.</li>
+                                    <li>Current payroll CFDI tax stamping.</li>
+                                    <li>Determination of IMSS, INFONAVIT, and ISN fees.</li>
+                                    <li>Management of hires, terminations, and IDSE modifications.</li>
+                                </ul>
+                                <span class="back-hint">
+                                    <span class="nav-es">Aleja el cursor para volver</span>
+                                    <span class="nav-en">Move cursor away to return</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 6: Facturación Electrónica -->
+                <div class="service-card-container">
+                    <div class="service-card">
+                        <div class="card-face card-front">
+                            <div class="service-image-container">
+                                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Facturación Electrónica" class="service-bg-img">
+                                <div class="service-img-overlay"></div>
+                                <svg class="service-transparent-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <h3>
+                                    <span class="nav-es">Facturación Electrónica</span>
+                                    <span class="nav-en">Electronic Invoicing</span>
+                                </h3>
+                                <p>
+                                    <span class="nav-es">Emisión, validación y control eficiente de comprobantes fiscales digitales por Internet (CFDI).</span>
+                                    <span class="nav-en">Issuance, validation, and efficient control of digital tax receipts via Internet (CFDI).</span>
+                                </p>
+                                <span class="btn-detail">
+                                    <span class="nav-es">Ver detalle</span>
+                                    <span class="nav-en">View details</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="service-image-container back-bg">
+                                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Detalle Facturación" class="service-bg-img">
+                                <div class="service-img-overlay-dark"></div>
+                            </div>
+                            <div class="card-content-back">
+                                <h3>
+                                    <span class="nav-es">Detalle Técnico</span>
+                                    <span class="nav-en">Technical Details</span>
+                                </h3>
+                                <ul class="nav-es">
+                                    <li>Emisión de CFDI 4.0 (Ingresos, Egresos, Traslado).</li>
+                                    <li>Complementos de pago y notas de crédito.</li>
+                                    <li>Validación masiva de XML ante el SAT.</li>
+                                    <li>Soporte técnico en portales de facturación.</li>
+                                </ul>
+                                <ul class="nav-en">
+                                    <li>CFDI 4.0 issuance (Income, Expense, Transfer).</li>
+                                    <li>Payment complements and credit notes.</li>
+                                    <li>Massive XML validation before the SAT.</li>
+                                    <li>Technical support in invoicing portals.</li>
+                                </ul>
+                                <span class="back-hint">
+                                    <span class="nav-es">Aleja el cursor para volver</span>
+                                    <span class="nav-en">Move cursor away to return</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Cotizador (Envío automatizado a fgconsultingsolutions@gmail.com sin abrir cliente de correo y temporizador de 30s) -->
+    <section id="cotizador" class="quote-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    <span class="nav-es">Solicita una Cotización a la Medida</span>
+                    <span class="nav-en">Request a Tailored Quote</span>
+                </h2>
+                <p>
+                    <span class="nav-es">Ingresa tus datos y selecciona los servicios de tu interés para recibir una propuesta ejecutiva</span>
+                    <span class="nav-en">Enter your details and select the services of your interest to receive an executive proposal</span>
+                </p>
+            </div>
+            
+            <div class="quote-card">
+                <!-- Formulario con FormSubmit configurado por HTML puro a fgconsultingsolutions@gmail.com sin app externa -->
+                <form action="https://formsubmit.co/fgconsultingsolutions@gmail.com" method="POST" class="quote-form">
+                    <!-- Desactivar captcha y redirección forzada externa -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nombre">
+                                <span class="nav-es">Nombre Completo o Razón Social</span>
+                                <span class="nav-en">Full Name or Company Name</span>
+                            </label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Empresa Corporativa S.A. de C.V." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                <span class="nav-es">Correo Electrónico</span>
+                                <span class="nav-en">Email Address</span>
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="contacto@empresa.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">
+                                <span class="nav-es">Teléfono de Contacto</span>
+                                <span class="nav-en">Contact Phone</span>
+                            </label>
+                            <!-- Validación permitiendo dígitos, espacios y símbolos +, #, (), con mínimo de 10 caracteres totales -->
+                            <input type="tel" id="telefono" name="telefono" placeholder="+52 (123) #456-7890" pattern="[\d\s\+\#\(\)\-]{10,25}" minlength="10" maxlength="25" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo-persona">
+                                <span class="nav-es">Tipo de Persona</span>
+                                <span class="nav-en">Tax Entity Type</span>
+                            </label>
+                            <select id="tipo-persona" name="tipo_persona" required>
+                                <option value="" disabled selected>
+                                    <span class="nav-es">Selecciona una opción</span>
+                                    <span class="nav-en">Select an option</span>
+                                </option>
+                                <option value="fisica">
+                                    <span class="nav-es">Persona Física</span>
+                                    <span class="nav-en">Individual</span>
+                                </option>
+                                <option value="moral">
+                                    <span class="nav-es">Persona Moral</span>
+                                    <span class="nav-en">Corporation</span>
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>
+                            <span class="nav-es">Servicios de Interés (Selecciona los que requieras):</span>
+                            <span class="nav-en">Services of Interest (Select those required):</span>
+                        </label>
+                        <div class="checkbox-grid">
+                            <label class="checkbox-label"><input type="checkbox" name="servicios[]" value="Contabilidad"> <span class="nav-es">Contabilidad General</span><span class="nav-en">General Accounting</span></label>
+                            <label class="checkbox-label"><input type="checkbox" name="servicios[]" value="Fiscal"> <span class="nav-es">Estrategia Fiscal</span><span class="nav-en">Tax Strategy</span></label>
+                            <label class="checkbox-label"><input type="checkbox" name="servicios[]" value="Financiera"> <span class="nav-es">Consultoría Financiera</span><span class="nav-en">Financial Consulting</span></label>
+                            <label class="checkbox-label"><input type="checkbox" name="servicios[]" value="Auditoria"> <span class="nav-es">Auditoría y Control</span><span class="nav-en">Auditing and Control</span></label>
+                            <label class="checkbox-label"><input type="checkbox" name="servicios[]" value="Nominas"> <span class="nav-es">Gestión de Nóminas</span><span class="nav-en">Payroll Management</span></label>
+                            <label class="checkbox-label"><input type="checkbox" name="servicios[]" value="Facturacion"> <span class="nav-es">Facturación Electrónica</span><span class="nav-en">Electronic Invoicing</span></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="mensaje">
+                            <span class="nav-es">Detalles adicionales o requerimientos específicos</span>
+                            <span class="nav-en">Additional details or specific requirements</span>
+                        </label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe brevemente las necesidades de la empresa..."></textarea>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary">
+                            <span class="nav-es">Enviar Solicitud de Cotización</span>
+                            <span class="nav-en">Submit Quote Request</span>
+                        </button>
+                        
+                        <!-- Mensaje de éxito condicional con animación CSS Pura de temporizador estricto de 30 segundos -->
+                        <div class="success-message">
+                            <span class="nav-es">Sus datos han sido enviados con éxito, en breve nos podremos en contacto contigo</span>
+                            <span class="nav-en">Your data has been sent successfully, we will contact you shortly</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="#" class="logo-text-link">G&A Consultoría Contable</a>
+                </div>
+                <p class="footer-quote">
+                    <span class="nav-es">"Excelencia contable, financiera y fiscal: blindando el presente y proyectando el éxito corporativo de personas físicas y morales."</span>
+                    <span class="nav-en">"Accounting, financial, and tax excellence: protecting the present and projecting the corporate success of individuals and corporations."</span>
+                </p>
+            </div>
+            
+            <div class="footer-contact-info">
+                <h3>
+                    <span class="nav-es">Contacto Directo</span>
+                    <span class="nav-en">Direct Contact</span>
+                </h3>
+                <p>
+                    <span class="nav-es">¿Tienes dudas o aclaraciones? Escríbenos directamente a:</span>
+                    <span class="nav-en">Do you have questions or clarifications? Write to us directly at:</span>
+                </p>
+                <a href="mailto:fgconsultingsolutions@gmail.com" class="footer-email">fgconsultingsolutions@gmail.com</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    <span class="nav-es">&copy; 2026 G&A Consultaría Contable. Todos los derechos reservados.</span>
+                    <span class="nav-en">&copy; 2026 G&A Consultaría Contable. All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
